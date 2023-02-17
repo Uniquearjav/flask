@@ -29,8 +29,3 @@ def header():
 @app.route("/products")
 def about():
     return render_template("product.html")
-
-    # add 404 when page not found
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template("404.html")
