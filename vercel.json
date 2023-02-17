@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/horizaura-flask/app" }
+    { "source": "/(.*)", "destination": "/horizaura-master/app" }
   ]
 }
