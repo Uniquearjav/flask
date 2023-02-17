@@ -1,10 +1,10 @@
 from flask import Flask , render_template
 
 app = Flask(__name__)
-
-@app.route("/")
 def home():
-    return render_template("index.html")
+    with open('header.html') as f:
+        header_content = f.read()
+    return render_template('index.html', header_content=header_content)
 
 @app.route("/login")
 def login():
