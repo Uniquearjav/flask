@@ -14,10 +14,6 @@ def login():
 def register():
     return render_template("register.html")
 
-@app.route("/header")
-def header():
-    return render_template("header.html")
-
 @app.route("/footer")
 def footer():
     with open('footer.html') as f:
