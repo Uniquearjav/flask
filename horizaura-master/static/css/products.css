@@ -1,0 +1,17 @@
+/* products.html */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    /* center the text */
+    text-align: center;
+    /* add font sixe to 22px */
+    font-size: 22px;
+}

@@ -1,0 +1,75 @@
+<!-- this is register page -->
+<!-- get all firebase credential from index.html -->
+<!-- import required firebase modules also -->
+<!-- make a register form -->
+<!-- connect the register form with firebase realtime database and add credentials -->
+<!-- if user is successfully logged in then redirect to product page -->
+<!-- if user is not logged in then show error message -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HorizAura</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+  <script>
+
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyCe1AX6UtCSlH_TLyBujufAOC0nHqy-dRM",
+    authDomain: "horiz-aura.firebaseapp.com",
+    databaseURL: "https://horiz-aura-default-rtdb.firebaseio.com",
+    projectId: "horiz-aura",
+    storageBucket: "horiz-aura.appspot.com",
+    messagingSenderId: "195677751898",
+    appId: "1:195677751898:web:2142ec5235e3117969a663",
+    measurementId: "G-VHHQEREH9H"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+<body>
+    <div id="register-form">
+        <h1>Register</h1>
+        <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <br>
+        <!-- message -->
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required>
+        <br>
+        <!-- message -->
+        <!-- company -->
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required>
+        <br>
+        <!-- company -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit" id="register">Register</button>
+        </form>
+        <p id="error"></p>
+    </div>
+    <script src="static/js/register.js"></script>
+</body>
+<!-- connect the register form with firebase realtime database and add credentials -->
+
+</html>
