@@ -7,6 +7,8 @@ div {
 /* use this link in the body */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color:white;
 }
 
 /* centre the div id="login-form" */
@@ -37,7 +39,6 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background-image: url("../img/login.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
