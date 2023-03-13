@@ -21,3 +21,6 @@ def register():
 @app.route("/sitemap")
 def sitemap():
     return render_template("sitemap.html")
+@app.route("/sitemap.xml")
+def sitemap():
+    return render_template("sitemap.xml")
