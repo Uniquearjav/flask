@@ -1,2 +1,2 @@
 Flask==2.2.2
-Flask-Sitemap==1.4.0
+Flask-Sitemap==0.4.0
