@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, make_response
 from flask_sitemap import Sitemap
 
 app = Flask(__name__)
@@ -20,12 +20,12 @@ def login():
 def register():
     return render_template("register.html")
 
-@app.route("/sitemap")
-def sitemap():
+@app.route('/sitemap.html')
+def render_sitemap_html():
     return render_template("sitemap.html")
 
 @app.route('/sitemap.xml', methods=['GET'])
-def sitemap():
+def render_sitemap_xml():
     # Generate the sitemap dynamically
     sitemap_xml = render_template('sitemap.xml')
     response = make_response(sitemap_xml)
